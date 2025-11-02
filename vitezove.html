@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výstavní soutěž</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo-container">
+                 <a href="index.html" class="logo-link"><img src="logo.png" alt="Logo" class="header-logo" loading="lazy" /></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="vysledky.html">Aktuální výsledky</a></li>
+                <li><a href="vitezove.html">Vítězové</a></li>
+                <li><a href="pravidla.html">Pravidla</a></li>
+                <li><a href="navod.html">Jak vystavovat</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+      
+
+        <section class="winners-section">
+            <h2 class="section-title">Vítězové</h2>
+            <div class="winners-cards-container">
+                <div id="winners-thumbs" class="vitezove-thumbs-container"></div>
+            </div>
+        </section>
+
+
+        <section class="bottom-stripe">
+            <div class="footer-contact">
+                <div class="contact-inner">
+                    <a class="contact-link" href="https://www.spolekstrakacu.cz/" target="_blank" rel="noopener noreferrer" aria-label="Spolek">
+                        <img class="spolek-logo" src="logo-spolku-final.png" alt="Spolek" loading="lazy" />
+                    </a>
+                    <a class="contact-link" href="https://www.facebook.com/pes.roku" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="Facebook_Logo_Primary.png" alt="Facebook" loading="lazy" />
+                    </a>
+                    <a class="contact-link" href="https://m.me/pes.roku" target="_blank" rel="noopener noreferrer" aria-label="Messenger">
+                        <img src="Messenger_Icon_Primary_Blue.png" alt="Messenger" loading="lazy" />
+                    </a>
+                    <a class="contact-link contact-email" href="mailto:pes.roku@seznam.cz" aria-label="Email">pes.roku@seznam.cz</a>
+                </div>
+                <div class="footer-copy">© 2025 Alena Holubová</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

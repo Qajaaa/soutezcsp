@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výstavní soutěž</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+      <defs>
+        <filter id="feather" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="13" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo-container">
+                 <a href="index.html" class="logo-link"><img src="logo.png" alt="Logo" class="header-logo" loading="lazy" /></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="vysledky.html">Aktuální výsledky</a></li>
+                <li><a href="vitezove.html">Vítězové</a></li>
+                <li><a href="pravidla.html">Pravidla</a></li>
+                <li><a href="navod.html">Jak vystavovat</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section pravidla-hero">
+            <div class="hero-content">
+                <h1 class="second-title">
+                    <span class="vysledky-title-line-2">Pravidla soutěže</span>
+                </h1>
+                <p class="hero-text">
+                    
+Soutěžní sezona běží od 1.11. do 31.10. následujícího roku. Soutěžit mohou psi, jejichž majitel je  členem Spolku ČSP (výsledky se započítávají za dobu členství, nikoli zpětně). Zapojit se může každý člen, který se svým psem absolvuje hodnocený typ výstavy. Udělovaným titulem je Pes roku, Fena roku, Veterán roku.
+Vítězem bude vždy jedinec s největším počtem bodů. Započítávají se výsledky z mezinárodních a národních výstav v ČR v aktuálním roce a výstav pořádaných Spolkem ČSP. V případě rovnosti bodů rozhoduje pořadí na kluby pořádaných výstavách. Majitelé bodovaných jedinců musí být členem Spolku ČSP.
+                </p>
+            </div>
+            <div class="hero-image-container">
+                <img class="dog-image pohyb-image" src="pohyb.png" alt="Pes" loading="lazy" />
+            </div>
+        </section>
+
+        <section class="bodovaci-section">
+            <h2 class="section-title">Bodovací tabulka</h2>
+            <div class="table-wrap">
+                <table class="score-table" summary="Bodovací tabulka soutěže">
+            
+                    <thead>
+                        <tr>
+                            <th scope="col">Ocenění</th>
+                            <th scope="col">výstavy Spolku ČSP</th>
+                            <th scope="col">mezinárodní a národní výstava</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Výborná 1.</td><td>5</td><td>3</td></tr>
+                        <tr><td>Výborná 2.-4.</td><td>3</td><td>2</td></tr>
+                        <tr><td>CAJC</td><td>5</td><td>3</td></tr>
+                        <tr><td>BOJ</td><td>3</td><td>2</td></tr>
+                        <tr><td>CAC</td><td>5</td><td>3</td></tr>
+                        <tr><td>res.CAC</td><td>3</td><td>2</td></tr>
+                        <tr><td>Národní vítěz</td><td></td><td>4</td></tr>
+                        <tr><td>Klubový vítěz</td><td>5</td><td></td></tr>
+                        <tr><td>Vítěz speciální výstavy</td><td>5</td><td></td></tr>
+                        <tr><td>Nejlepší pes/fena</td><td>5</td><td></td></tr>
+                        <tr><td>BOV</td><td>3</td><td>2</td></tr>
+                        <tr><td>BOS</td><td>6</td><td>4</td></tr>
+                        <tr><td>BOB, vítěz plemene</td><td>8</td><td>5</td></tr>
+                        <tr><td>JBIG, BIG 1.-5.</td><td></td><td>10</td></tr>
+                        <tr><td>JBOD, BOD, JBIS, BIS</td><td></td><td>20</td></tr>
+                    </tbody>
+                </table>
+                <p class="table-note">platnost od 1.11.2023</p>
+            </div>
+        </section>
+
+        <section class="bottom-stripe">
+            <div class="footer-contact">
+                <div class="contact-inner">
+                    <a class="contact-link" href="https://www.spolekstrakacu.cz/" target="_blank" rel="noopener noreferrer" aria-label="Spolek">
+                        <img class="spolek-logo" src="logo-spolku-final.png" alt="Spolek" loading="lazy" />
+                    </a>
+                    <a class="contact-link" href="https://www.facebook.com/pes.roku" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="Facebook_Logo_Primary.png" alt="Facebook" loading="lazy" />
+                    </a>
+                    <a class="contact-link" href="https://m.me/pes.roku" target="_blank" rel="noopener noreferrer" aria-label="Messenger">
+                        <img src="Messenger_Icon_Primary_Blue.png" alt="Messenger" loading="lazy" />
+                    </a>
+                    <a class="contact-link contact-email" href="mailto:pes.roku@seznam.cz" aria-label="Email">pes.roku@seznam.cz</a>
+                </div>
+                <div class="footer-copy">© 2025 Alena Holubová</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
