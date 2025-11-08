@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Seznam psů (jméno + odkaz na fotografii) ---
   // Vytvoří pole šesti psů. Můžete upravit cesty k fotkám podle vašeho projektu.
   const dogs = [
-    { name: 'Antonín Prosecká tlapka', title: '1. místo psi — 2024', photo: 'tonda.jpg', description: 'Antonín je energický pes se skvělým temperamentem, vítěz regionálních výstav.' },
-    { name: 'Bruce Black z Hrabětova panství', title: '2. místo psi — 2024', photo: 'bruce.jpg', description: 'Bruce má výraznou černobílou kresbu a vynikající postoj v kruhu.' },
-    { name: 'Quedius Bonasa Sorbus', title: '3. místo psi — 2024', photo: 'quedius.jpg', description: 'Quedius je elegantní pes s jemnou srstí a klidnou povahou.' },
-    { name: 'Granulka z Akátového hájku', title: '1. místo feny — 2024', photo: 'granulka.jpg', description: 'Granulka je milá fenka s velkým srdcem a skvělou poslušností.' },
-    { name: 'Elegie Nella Belavia', title: '2. místo feny — 2024', photo: 'elegie.jpg', description: 'Elegie vyniká výrazným pohybem a šarmem na pódiu.' },
-    { name: 'Briza ze Strakaté louky', title: '3. místo feny — 2024', photo: 'briza.webp', description: 'Briza je temperamentní a velmi společenská fenka, oblíbená u porot.' },
-    { name: 'Bramína Nella Belavia', title: '1.místo veterán — 2024', photo: 'bramina.jpg', description: 'Bramína je temperamentní a velmi společenská fenka, oblíbená u porot.' },
+    { name: 'Antonín Prosecká tlapka', title: '1. místo psi — 2024', photo: 'tonda.jpg', description: '' },
+    { name: 'Bruce Black z Hrabětova panství', title: '2. místo psi — 2024', photo: 'bruce.jpg', description: '' },
+    { name: 'Quedius Bonasa Sorbus', title: '3. místo psi — 2024', photo: 'quedius.jpg', description: '' },
+    { name: 'Granulka z Akátového hájku', title: '1. místo feny — 2024', photo: 'granulka.jpg', description: '' },
+    { name: 'Elegie Nella Belavia', title: '2. místo feny — 2024', photo: 'elegie.jpg', description: '' },
+    { name: 'Briza ze Strakaté louky', title: '3. místo feny — 2024', photo: 'briza.webp', description: '' },
+    { name: 'Bramína Nella Belavia', title: '1.místo veterán — 2024', photo: 'bramina.jpg', description: '' },
   ];
 
   // Exponuj seznam do globálního scope, aby bylo možné s ním pracovat z konzole nebo jiných skriptů
