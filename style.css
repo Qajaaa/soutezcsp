@@ -784,6 +784,8 @@ body {
     .hero-image-container {
         order: -1; 
         height: 300px;
+        width: 100%;
+        max-width: 100%;
     }
 
     
@@ -804,6 +806,16 @@ body {
     .hero-content {
         padding-right: 0;
         text-align: center;
+    }
+
+    /* Ensure the hero image scales on small screens and doesn't create horizontal overflow */
+    .hero-image-container .dog-image {
+        position: static !important;
+        transform: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
     }
     
     .hero-title {
