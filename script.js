@@ -46,13 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Seznam psů (jméno + odkaz na fotografii) ---
   // Vytvoří pole šesti psů. Můžete upravit cesty k fotkám podle vašeho projektu.
   const dogs = [
-    { name: 'Antonín Prosecká tlapka', title: '1. místo psi — 2024', photo: 'tonda.jpg', description: '' },
-    { name: 'Bruce Black z Hrabětova panství', title: '2. místo psi — 2024', photo: 'bruce.jpg', description: '' },
-    { name: 'Quedius Bonasa Sorbus', title: '3. místo psi — 2024', photo: 'quedius.jpg', description: '' },
+    { name: 'Antonín Prosecká tlapka', title: '1. místo psi — 2024, 1. místo psi — 2025', photo: 'tonda.jpg', description: '' },
+    { name: 'Bruce Black z Hrabětova panství', title: '2. místo psi — 2024, 3. místo psi — 2025', photo: 'bruce.jpg', description: '' },
+    { name: 'Quedius Bonasa Sorbus', title: '3. místo psi — 2024, 2. místo psi — 2025', photo: 'quedius.jpg', description: '' },
     { name: 'Granulka z Akátového hájku', title: '1. místo feny — 2024', photo: 'granulka.jpg', description: '' },
-    { name: 'Elegie Nella Belavia', title: '2. místo feny — 2024', photo: 'elegie.jpg', description: '' },
+    { name: 'Elegie Nella Belavia', title: '2. místo feny — 2024, 2. místo feny — 2025', photo: 'elegie.jpg', description: '' },
     { name: 'Briza ze Strakaté louky', title: '3. místo feny — 2024', photo: 'briza.webp', description: '' },
+    { name: 'Ebi z Chotěšovského dvora', title: '1. místo feny — 2025', photo: 'ebi.jpg', description: '' },
+    { name: 'Ebba Nella Belavia', title: '3. místo feny — 2025', photo: 'ebba.jpg', description: '' },
     { name: 'Bramína Nella Belavia', title: '1.místo veterán — 2024', photo: 'bramina.jpg', description: '' },
+    { name: 'Aranka Strakatá packa', title: '1.místo veterán — 2025', photo: 'aranka.jpg', description: '' },
   ];
 
   // Exponuj seznam do globálního scope, aby bylo možné s ním pracovat z konzole nebo jiných skriptů
@@ -352,7 +355,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const title = document.createElement('div');
       title.className = 'thumb-title';
-      title.textContent = d.title || '';
+      // If the title contains multiple comma-separated entries, render each on its own line
+      if (d.title) {
+        const parts = d.title.split(',').map(s => s.trim()).filter(Boolean);
+        if (parts.length > 1) {
+          parts.forEach(p => {
+            const row = document.createElement('div');
+            row.textContent = p;
+            title.appendChild(row);
+          });
+        } else {
+          title.textContent = d.title;
+        }
+      } else {
+        title.textContent = '';
+      }
 
       // Open lightbox on click or keyboard activation
       function activate(e) {
